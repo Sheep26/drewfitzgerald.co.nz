@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    scrollbar-width: thin;
+    background: rgb(25, 25, 25);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100svw;
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.font {
+    font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+main {
+    color: white;
+    font-size: 400;
+}
+
+.vcentered {
+    align-items: center;
+}
+
+.hcentered {
+    align-items: center;
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        rgb(0, 136, 255) 7.5%,
+        rgb(0, 255, 81) 50%,
+        rgb(255, 0, 0) 92.5%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 860px) {
+    .hero {
+        margin-top: 15vh;
+        margin-right: 8vw;
+        font-size: 8rem;
+        text-align: right;
+    }
+}

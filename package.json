@@ -1,0 +1,23 @@
+{
+  "name": "drewfitzgerald.co.nz",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Sheep26/drewfitzgerald.co.nz#readme",
+  "bugs": {
+    "url": "https://github.com/Sheep26/drewfitzgerald.co.nz/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sheep26/drewfitzgerald.co.nz.git"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "ejs": "^7.0.1",
+    "express": "^5.3.0",
+    "morgan": "^1.12.1"
+  }
+}
