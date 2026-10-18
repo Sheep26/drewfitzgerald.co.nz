@@ -38,6 +38,22 @@ main {
     font-size: 400;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
+.view-more {
+    margin-bottom: 20px;
+}
+
+.max-height {
+    height: 100svh;
+}
+
+.max-width {
+    width: 100svw;
+}
+
 .vcentered {
     align-items: center;
 }
@@ -59,8 +75,27 @@ main {
         rgb(0, 255, 81) 50%,
         rgb(255, 0, 0) 92.5%
     );
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.header {
+    font-weight: 400;
+    font-size: 52px;
+    margin-left: 8vw;
+    margin-top: 30vh;
+}
+
+.page-foot {
+    color: lightgrey;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.15rem;
+}
+
+.page-foot:hover {
+    color: grey;
 }
 
 @media screen and (min-width: 860px) {
