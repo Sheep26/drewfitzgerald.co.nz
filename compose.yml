@@ -1,0 +1,7 @@
+services:
+  wchouses:
+    image: drewfitzgerald:latest
+    container_name: drewfitzgerald
+    restart: always
+    ports:
+      - "8880:80"
