@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -80,13 +84,6 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
-.header {
-    font-weight: 400;
-    font-size: 52px;
-    margin-left: 8vw;
-    margin-top: 30vh;
-}
-
 .page-foot {
     color: lightgrey;
     font-weight: 500;
@@ -98,11 +95,62 @@ main {
     color: grey;
 }
 
-@media screen and (min-width: 860px) {
+#top_btn {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#top_btn.shown {
+    opacity: 1;
+}
+
+.header {
+    font-weight: 400;
+}
+
+.p {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .headers {
+        margin-top: -5vh;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .hero {
-        margin-top: 15vh;
-        margin-right: 8vw;
         font-size: 8rem;
-        text-align: right;
+        margin-top: -5vh;
+    }
+
+    .header {
+        font-size: 58px;
+        margin-top: 20vh;
+    }
+
+    .content {
+        padding-top: 16px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .headers {
+        margin-top: -5vw;
+        width: 80%;
+    }
+
+    .hero {
+        font-size: 8rem;
+    }
+
+    .header {
+        font-size: 74px;
+        margin-top: 20vh;
     }
 }

@@ -13,14 +13,20 @@ app.use('/static', express.static('static'));
 app.set('view engine', 'ejs');
 app.set('views', './templates');
 
+function capitalize(str) {
+    if (!str) return '';
+
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 app.use(async (req, res, next) => {
     const page = req.path.replace('/', '') || 'home';
 
     // Check if requested content exists.
     if (!existsSync(`templates/${page}.ejs`))
-        return res.status(404).render('base', { title: '404', content: '404' });
+        return res.status(404).render('base', { title: 'Drew Fitzgerald - 404 Not Found', content: '404' });
 
-    res.render('base', { title: page, content: page });
+    res.render('base', { title: `Drew Fitzgerald - ${capitalize(page)}`, content: page });
 });
 
 app.listen(PORT, '0.0.0.0', (err) => {
